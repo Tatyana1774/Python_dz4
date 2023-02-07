@@ -9,3 +9,25 @@ b = list(map(int, input('Введите элементы второго множ
 result=list(set(a) & set(b))
 result.sort()
 print(result)
+
+#2 решение
+
+mol = [int(x) for x in input('Введите любые числа через пробел: ').split()]
+n = mol[0]
+m = mol[1]
+set_1 = set()
+set_2 = set()
+list_1 = list()
+a = [int(x) for x in input('Введите любые числа через пробел: ').split()]
+k = set(a)
+for i in k:
+    set_1.add(i)
+b = [int(x) for x in input('Введите любые числа через пробел: ').split()]
+k1 = set(b)
+for i in k1:
+    set_2.add(i)
+lok = set_1 & set_2
+kool = list(lok)
+kool.sort()
+for i in kool:
+    print(i, end=' ')
